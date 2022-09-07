@@ -10870,3 +10870,39 @@ header ul li a.active_link {
 header ul li a:hover {
   color: #0282f9;
 }
+
+footer .footer-links {
+  background-image: url("{{ asset('assets/images/footer-bg.jpg') }}");
+  background-size: cover;
+  height: 350px;
+  overflow: hidden;
+  color: white;
+}
+footer .footer-links .menu {
+  margin-right: 2.5rem;
+}
+footer .footer-links .menu h5, footer .footer-links .menu .h5 {
+  color: white;
+  font-stretch: extra-condensed;
+  font-weight: bold;
+}
+footer .footer-links .menu li {
+  color: #939393;
+  font-size: 14px;
+}
+footer .footer-social {
+  background-color: #303030;
+}
+footer .footer-social .cta-button {
+  padding: 10px;
+  border: #0282f9 solid 2px;
+}
+footer .footer-social .social {
+  color: #0282f9;
+  font-weight: bold;
+}
+footer .logo-bg img {
+  height: 500px;
+  position: relative;
+  bottom: 80px;
+}

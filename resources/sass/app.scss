@@ -27,3 +27,47 @@ header{
         }
     }
 }
+
+footer {
+    .footer-links {
+      background-image: url("{{ asset('assets/images/footer-bg.jpg') }}");
+      background-size: cover;
+      height: 350px;
+      overflow: hidden;
+      color: white;
+
+        .menu {
+            margin-right: 2.5rem;
+            h5 {
+            color: white;
+            font-stretch: extra-condensed;
+            font-weight: bold;
+            }
+            li {
+            color: #939393;
+            font-size: 14px;
+            }
+        }
+    }
+
+    .footer-social {
+      background-color: #303030;
+
+        .cta-button {
+            padding: 10px;
+            border: $brandColor solid 2px;
+        }
+        .social {
+            color: $brandColor;
+            font-weight: bold;
+        }
+    }
+  
+    .logo-bg {
+        img {
+        height: 500px;
+        position: relative;
+        bottom: 80px;
+        }
+    }
+}
