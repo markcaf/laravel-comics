@@ -10872,7 +10872,7 @@ header ul li a:hover {
 }
 
 footer .footer-links {
-  background-image: url(../../public/assets/images/footer-bg.jpg);
+  background-image: url(../../assets/images/footer-bg.jpg);
   background-size: cover;
   height: 350px;
   overflow: hidden;
@@ -10909,7 +10909,7 @@ footer .logo-bg img {
 
 section#jumbo {
   height: 350px;
-  background-image: url(../assets/img/jumbotron.jpg);
+  background-image: url(../../assets/images/jumbotron.jpg);
   background-size: cover;
 }
 
