@@ -30,7 +30,7 @@ header{
 
 footer {
     .footer-links {
-      background-image: url("{{ asset('assets/images/footer-bg.jpg') }}");
+      background-image: url(../../public/assets/images/footer-bg.jpg);
       background-size: cover;
       height: 350px;
       overflow: hidden;
@@ -68,6 +68,73 @@ footer {
         height: 500px;
         position: relative;
         bottom: 80px;
+        }
+    }
+}
+
+section#jumbo{
+    height: 350px;
+    background-image: url(../assets/img/jumbotron.jpg);
+    background-size: cover;
+}
+
+main{
+    background-color: #1c1c1c;
+    position: relative;
+    .heading{
+        color: white;
+        background-color: $brandColor;
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-stretch: ultra-condensed;
+        position: absolute;
+        top: -25px;
+    }
+    .comics-container{
+        margin: auto;
+    }  
+    .load-more{
+        background-color: $brandColor;
+        width: 200px;
+        font-weight: bold;
+        font-stretch: ultra-condensed;
+        margin-top: -40px;
+        cursor: pointer;
+    }
+}
+
+.comic {
+    width: calc(100% / 6);
+        .image-container {
+            height: 192px;
+            width: 192px;
+            img.comic-cover {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            }
+        }
+        .title {
+            font-size: 14px;
+        }
+}
+
+section#market{
+    background-color: $brandColor;
+    ul{
+        li{
+            display: inline-block;
+            margin-right: 1rem;
+            color: white;
+            font-size: 13px;
+            img{
+                height: 50px;
+                &.svg-icon{
+                    width: 50px;
+                }
+            };
         }
     }
 }
