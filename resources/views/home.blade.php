@@ -24,7 +24,7 @@
             <div class="col-12 py-5 comics-container d-flex flex-wrap">
 
                 {{-- Comic card --}}
-                @foreach ($comics as $comic)
+                @forelse ($comics as $comic)
                     <div class="comic mb-5">
                         <div class="image-container">
                         <img class="comic-cover" src="{{ $comic->image }}" alt="{{ $comic->type }}" />
@@ -33,7 +33,12 @@
                         {{ $comic->title }}
                         </div>
                     </div>
-                @endforeach
+
+                @empty
+                    <div class="m-4 text-white w-100 text-center">
+                        <h2>There are no comics available. Check back later.</h2>
+                    </div>
+                @endforelse
                 {{-- /Comic card --}}
             </div>
         </div>
