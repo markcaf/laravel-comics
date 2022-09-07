@@ -22,15 +22,18 @@
 
         <div class="row">
             <div class="col-12 py-5 comics-container d-flex flex-wrap">
+
                 {{-- Comic card --}}
-                <div class="comic mb-5">
-                    <div class="image-container">
-                    <img class="comic-cover" src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX" alt="title" />
+                @foreach ($comics as $comic)
+                    <div class="comic mb-5">
+                        <div class="image-container">
+                        <img class="comic-cover" src="{{ $comic->image }}" alt="{{ $comic->type }}" />
+                        </div>
+                        <div class="title text-white text-uppercase mt-3">
+                        {{ $comic->title }}
+                        </div>
                     </div>
-                    <div class="title text-white text-uppercase mt-3">
-                    Titolo
-                    </div>
-                </div>
+                @endforeach
                 {{-- /Comic card --}}
             </div>
         </div>

@@ -10956,6 +10956,7 @@ main .load-more {
 }
 .comic .title {
   font-size: 14px;
+  margin-right: 25px;
 }
 
 section#market {
